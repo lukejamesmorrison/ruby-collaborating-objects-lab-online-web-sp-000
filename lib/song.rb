@@ -25,7 +25,6 @@ class Song
 
   def artist_name=(name)
     artists = Artist.all.select {|artist| artist.name == name}
-    binding.pry
     @artist = artists.empty? ? Artist.new(name) : artists.first
   end
 
