@@ -18,6 +18,7 @@ class Song
     song = self.new(file_parts[1])
     artist = artist_name=(file_parts[0])
     artist.songs << song
+    song
 
     # self.all << song
   end
