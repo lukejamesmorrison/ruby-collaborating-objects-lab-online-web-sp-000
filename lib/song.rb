@@ -16,7 +16,7 @@ class Song
   def new_by_filename(filename)
     file_parts = filename.split(' - '); #0 - artist, 1 - title, 3 - genre.extension
     song = self.new(file_parts[1])
-    puts song.artist
+    song.artist = file_parts[0]
 
     # self.all << song
   end
