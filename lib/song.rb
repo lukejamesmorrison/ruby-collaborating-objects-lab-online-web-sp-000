@@ -18,7 +18,6 @@ class Song
     song = self.new(file_parts[1])
     artist = Artist.find_or_create_by_name(file_parts[0])
     artist.add_song(song)
-    song
   end
 
   def artist_name=(name)
