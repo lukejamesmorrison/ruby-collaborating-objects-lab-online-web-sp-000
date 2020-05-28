@@ -21,7 +21,7 @@ class Song
     # self.all << song
   end
 
-  def artist_name(name)
+  def artist_name=(name)
     artists = @@all.select {|artist| artist.name == name}
     if(artists.empty?)
       artist = Artist.new(name)
