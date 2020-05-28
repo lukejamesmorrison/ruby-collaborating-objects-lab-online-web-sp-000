@@ -22,7 +22,17 @@ class Song
   end
 
   def artist_name(name)
-    
+    artists = @@all.select {|artist| artist.name == name}
+    if(artists.empty?)
+      artist = Artist.new(name)
+    else
+      artist = artists.first
+    end
+
+    @artist = artist
+
+
+    # ? self.new(name) : artists.first
   end
 
 end
