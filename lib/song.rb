@@ -25,7 +25,8 @@ class Song
 
   def artist_name=(name)
     artists = Artist.all.select {|artist| artist.name == name}
-    @artist = artists.empty? ? Artist.new(name) : artists.first
+    puts artists
+    # @artist = artists.empty? ? Artist.new(name) : artists.first
   end
 
 end
