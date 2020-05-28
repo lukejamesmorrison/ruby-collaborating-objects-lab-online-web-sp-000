@@ -20,8 +20,6 @@ class Song
     artist = artist_name=(file_parts[0])
     artist.add_song(song)
     song
-
-    # self.all << song
   end
 
   def artist_name=(name)
